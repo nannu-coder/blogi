@@ -1,0 +1,10 @@
+@mixin tag{
+    display: inline-flex;
+    background-color: $gray-1;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@mixin tag-dot($color){
+    color: $color;
+}

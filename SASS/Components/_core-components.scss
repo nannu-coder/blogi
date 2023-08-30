@@ -1,0 +1,12 @@
+
+.tag{
+    @include tag;
+    .tag-icon{
+        .fa-circle{
+            @include tag-dot($travel-tag-color)
+        }
+    }
+    .tag-text{
+        margin: 0;
+    }
+}

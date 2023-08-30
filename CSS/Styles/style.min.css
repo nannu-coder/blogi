@@ -1,1 +1,34 @@
-*{margin:0;padding:0}body{box-sizing:border-box}ul,ol{list-style:none}a{text-decoration:none}/*# sourceMappingURL=style.min.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-content {
+  margin: 40px 0;
+}
+
+.tag {
+  display: inline-flex;
+  background-color: #EFF1F4;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tag .tag-icon .fa-circle {
+  color: #E10689;
+}
+.tag .tag-text {
+  margin: 0;
+}/*# sourceMappingURL=style.min.css.map */
