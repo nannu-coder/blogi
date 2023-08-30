@@ -1,14 +1,25 @@
-@mixin tag{
-    display: inline-flex;
-    background-color: $gray-1;
-    padding: 4px 10px;
-    border-radius: 25px;
-    align-items: center;
+@mixin tag {
+  display: inline-flex;
+  background-color: $gray-1;
+  padding: 4px 10px;
+  border-radius: 25px;
+  align-items: center;
 }
 
-@mixin tag-dot($color){
-    color: $color;
-    font-size: 8px;
-    display: flex;
-    
+@mixin tag-dot($color) {
+  color: $color;
+  font-size: 8px;
+  display: flex;
+}
+
+@mixin hover-decoration {
+  text-decoration-color: $theme-color;
+  text-decoration-thickness: 2px;
+  //   background-color: red;
+}
+
+@mixin shadow {
+  box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
 }

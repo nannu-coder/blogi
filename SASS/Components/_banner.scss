@@ -1,3 +1,58 @@
-.banner-content{
-    margin: 40px 0;
+@import "../varibales";
+
+.banner {
+  margin: 40px 0;
+  .banner-content {
+    // margin: 40px 0;
+    .banner-text {
+      .banner-head {
+        font-size: 2.5rem;
+        font-family: $primary-font;
+        color: $text-color-dark;
+        font-weight: 600;
+        margin: 25px 0;
+        line-height: 1.2;
+      }
+      .hover-decoration {
+        transition: all linear 0.3s;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        display: inline-block;
+        &:hover {
+          @include hover-decoration;
+        }
+      }
+      .post-description {
+        font-size: 1.125rem;
+        color: $text-color-main;
+      }
+    }
+    .post-date-time {
+      display: flex;
+      &__post-date {
+        display: flex;
+        color: $text-color-light;
+        span {
+          margin-right: 5px;
+        }
+      }
+      &__post-time {
+        display: flex;
+        margin-left: 10px;
+        color: $text-color-light;
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .banner-img {
+    &__container {
+      background-color: $card-background-color;
+      padding: 1rem;
+      border-radius: 16px;
+      @include shadow;
+    }
+  }
 }

@@ -5,6 +5,8 @@
 
 body {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9ff;
 }
 
 ul,
@@ -16,26 +18,74 @@ a {
   text-decoration: none;
 }
 
-.banner-content {
+.banner {
   margin: 40px 0;
+}
+.banner .banner-content .banner-text .banner-head {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #090c1e;
+  font-weight: 600;
+  margin: 25px 0;
+  line-height: 1.2;
+}
+.banner .banner-content .banner-text .hover-decoration {
+  transition: all linear 0.3s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  display: inline-block;
+}
+.banner .banner-content .banner-text .hover-decoration:hover {
+  text-decoration-color: #fb2576;
+  text-decoration-thickness: 2px;
+}
+.banner .banner-content .banner-text .post-description {
+  font-size: 1.125rem;
+  color: #2d3350;
+}
+.banner .banner-content .post-date-time {
+  display: flex;
+}
+.banner .banner-content .post-date-time__post-date {
+  display: flex;
+  color: #808495;
+}
+.banner .banner-content .post-date-time__post-date span {
+  margin-right: 5px;
+}
+.banner .banner-content .post-date-time__post-time {
+  display: flex;
+  margin-left: 10px;
+  color: #808495;
+}
+.banner .banner-content .post-date-time__post-time span {
+  margin-right: 5px;
+}
+.banner .banner-img__container {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
 }
 
 .tag {
   display: inline-flex;
-  background-color: #EFF1F4;
+  background-color: #eff1f4;
   padding: 4px 10px;
   border-radius: 25px;
   align-items: center;
 }
 .tag .tag-icon .fa-circle {
-  color: #E10689;
+  color: #e10689;
   font-size: 8px;
   display: flex;
 }
 .tag .tag-text {
   margin: 0;
   padding-left: 5px;
-  color: #2D3350;
+  color: #2d3350;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 13px;
