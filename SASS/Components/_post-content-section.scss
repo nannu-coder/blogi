@@ -1,10 +1,15 @@
 .content {
   .content-wrapper {
     background-color: $card-background-color;
+    padding: 2rem;
+    border-radius: $border-radius-16;
+    @include shadow-lg;
     .post-card {
+      display: flex;
       .post-img {
         &__container {
           width: 272px;
+          margin-right: 2rem;
           .img-wrapper {
             @include img-wrapper(1/1, $border-radius-16);
             img {

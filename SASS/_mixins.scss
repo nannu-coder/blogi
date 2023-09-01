@@ -12,16 +12,31 @@
   display: flex;
 }
 
-@mixin hover-decoration {
-  text-decoration-color: $theme-color;
+// @mixin hover-decoration {
+//   text-decoration-color: $theme-color;
+// }
+
+@mixin heading-hover {
+  transition: all linear 0.3s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  display: inline-block;
   text-decoration-thickness: 2px;
-  //   background-color: red;
+  &:hover {
+    text-decoration-color: $theme-color;
+  }
 }
 
 @mixin shadow {
   box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
   -webkit-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+}
+
+@mixin shadow-lg {
+  box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
+  -webkit-box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
+  -moz-box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
 }
 
 @mixin img {
@@ -37,4 +52,13 @@
   display: block;
   overflow: hidden;
   border-radius: $border-radius;
+}
+
+@mixin heading($font-size) {
+  font-size: $font-size;
+  font-family: $primary-font;
+  color: $text-color-dark;
+  font-weight: 600;
+  margin: 25px 0;
+  line-height: 1.2;
 }
