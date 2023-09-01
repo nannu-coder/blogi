@@ -18,3 +18,12 @@
     background-color: darken($gray-1, 10%);
   }
 }
+
+.post-excerpt {
+  line-height: 1.8;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

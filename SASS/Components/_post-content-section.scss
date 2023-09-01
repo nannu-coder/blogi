@@ -35,6 +35,14 @@
         .hover-decoration {
           @include heading-hover;
         }
+
+        .post-excerpt {
+          margin-bottom: 1.25rem;
+          p {
+            color: $text-color-main;
+          }
+        }
+
         .post-date-time {
           .post-date-time__post-date {
           }

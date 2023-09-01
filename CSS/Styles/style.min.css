@@ -113,6 +113,15 @@ a {
   background-color: #d1d7df;
 }
 
+.post-excerpt {
+  line-height: 1.8;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 .content .content-wrapper {
   background-color: #ffffff;
   padding: 2rem;
@@ -167,4 +176,10 @@ a {
 }
 .content .content-wrapper .post-card .post-content .hover-decoration:hover {
   text-decoration-color: #fb2576;
+}
+.content .content-wrapper .post-card .post-content .post-excerpt {
+  margin-bottom: 1.25rem;
+}
+.content .content-wrapper .post-card .post-content .post-excerpt p {
+  color: #2d3350;
 }/*# sourceMappingURL=style.min.css.map */
