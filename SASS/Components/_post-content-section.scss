@@ -52,14 +52,19 @@
     border-radius: $border-radius-16;
     @include shadow-lg;
     .sidebar-content {
-      .sidebar-headnig {
+      .sidebar-heading {
+        h2 {
+          @include widget-title;
+        }
       }
       .sidebar-card {
         display: flex;
+        margin-bottom: 2rem;
         .sidebar-img-container {
           width: 80px;
           margin-right: 1rem;
           .img-wrapper {
+            width: 80px;
             @include img-wrapper($img-dimention-1, $border-radius-8);
             img {
               @include img;
@@ -73,8 +78,111 @@
         }
         .sidebar-content {
           .content-head {
+            line-height: 1.5;
+            @include heading(1rem);
+            margin-bottom: 0.5rem;
+            margin-top: 0;
           }
           .hover-decoration {
+            @include heading-hover;
+          }
+        }
+      }
+
+      .tag-list {
+        margin-bottom: 3rem;
+        .all-tags {
+          .tag {
+            margin-bottom: 0.5rem;
+          }
+          .food {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($food-tag-color);
+              }
+            }
+          }
+          .health {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($health-tag-color);
+              }
+            }
+          }
+          .inspiration {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($inspiration-tag-color);
+              }
+            }
+          }
+          .lifestyle {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($style-tag-color);
+              }
+            }
+          }
+          .nature {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($nature-tag-color);
+              }
+            }
+          }
+          .technology {
+            .tag-icon {
+              .fa-circle {
+                @include tag-dot($tech-tag-color);
+              }
+            }
+          }
+        }
+      }
+
+      .newsletter {
+        background-color: $theme-color;
+        padding: 2rem 1rem;
+        color: $white;
+        border-radius: $border-radius-16;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        .newsletter-content {
+          h2 {
+            font-weight: 600;
+            color: $white;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+          }
+        }
+        .newsletter-form {
+          display: flex;
+          flex-direction: column;
+          .form-input {
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid $theme-color;
+            margin-bottom: 1rem;
+            background-color: $white;
+
+            &:focus,
+            &:focus-visible {
+              border: 1px solid $theme-color;
+              outline: 0;
+            }
+          }
+          .submit-btn {
+            @extend .form-input;
+            font-weight: 600;
+            transition: all linear 0.3s;
+            &:hover {
+              opacity: 0.9;
+            }
           }
         }
       }

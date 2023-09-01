@@ -1,7 +1,7 @@
 @mixin tag {
   display: inline-flex;
   background-color: $gray-1;
-  padding: 4px 10px;
+  padding: 5px 10px;
   border-radius: 25px;
   align-items: center;
 }
@@ -61,4 +61,12 @@
   height: 100%;
   object-fit: cover;
   transition: all linear 0.3s;
+}
+
+@mixin widget-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: $text-color-dark;
+  line-height: 1.2;
+  font-size: 1.25rem;
 }
