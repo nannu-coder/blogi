@@ -1,0 +1,31 @@
+.content {
+  .content-wrapper {
+    background-color: $card-background-color;
+    .post-card {
+      .post-img {
+        &__container {
+          width: 272px;
+          .img-wrapper {
+            @include img-wrapper(1/1, $border-radius-16);
+            img {
+              @include img;
+            }
+          }
+
+          &:hover img {
+            cursor: pointer;
+            transform: scale(1.03);
+          }
+        }
+      }
+      .post-content {
+        .post-date-time {
+          .post-date-time__post-date {
+          }
+          .post-date-time__post-time {
+          }
+        }
+      }
+    }
+  }
+}
