@@ -1,4 +1,5 @@
 .tag {
+  transition: all linear 0.3s;
   @include tag;
   .tag-icon {
     .fa-circle {
@@ -12,5 +13,8 @@
     font-family: $primary-font;
     font-weight: 400;
     font-size: 13px;
+  }
+  &:hover {
+    background-color: darken($gray-1, 10%);
   }
 }

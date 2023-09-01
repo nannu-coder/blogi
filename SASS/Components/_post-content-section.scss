@@ -11,7 +11,7 @@
           width: 272px;
           margin-right: 2rem;
           .img-wrapper {
-            @include img-wrapper(1/1, $border-radius-16);
+            @include img-wrapper($img-dimention-1, $border-radius-16);
             img {
               @include img;
             }
@@ -24,6 +24,17 @@
         }
       }
       .post-content {
+        .tag-icon {
+          .fa-circle {
+            @include tag-dot($nature-tag-color);
+          }
+        }
+        .content-head {
+          @include heading(2rem);
+        }
+        .hover-decoration {
+          @include heading-hover;
+        }
         .post-date-time {
           .post-date-time__post-date {
           }

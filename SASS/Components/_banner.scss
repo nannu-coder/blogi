@@ -9,14 +9,6 @@
         @include heading(2.5rem);
       }
       .hover-decoration {
-        // transition: all linear 0.3s;
-        // text-decoration: underline;
-        // text-decoration-color: transparent;
-        // display: inline-block;
-        // text-decoration-thickness: 2px;
-        // &:hover {
-        //   @include hover-decoration;
-        // }
         @include heading-hover;
       }
       .post-description {
@@ -53,7 +45,7 @@
       max-height: 450px;
 
       .img-wrapper {
-        @include img-wrapper(16/9, $border-radius-8);
+        @include img-wrapper($img-dimention-9, $border-radius-8);
         img {
           @include img;
         }

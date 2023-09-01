@@ -27,6 +27,15 @@
   }
 }
 
+@mixin heading($font-size) {
+  font-size: $font-size;
+  font-family: $primary-font;
+  color: $text-color-dark;
+  font-weight: 600;
+  margin: 25px 0;
+  line-height: 1.2;
+}
+
 @mixin shadow {
   box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
   -webkit-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
@@ -52,13 +61,4 @@
   display: block;
   overflow: hidden;
   border-radius: $border-radius;
-}
-
-@mixin heading($font-size) {
-  font-size: $font-size;
-  font-family: $primary-font;
-  color: $text-color-dark;
-  font-weight: 600;
-  margin: 25px 0;
-  line-height: 1.2;
 }
