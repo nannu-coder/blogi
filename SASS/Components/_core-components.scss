@@ -27,3 +27,25 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.post-date-time {
+  p {
+    margin: 0;
+  }
+  display: flex;
+  &__post-date {
+    display: flex;
+    color: $text-color-light;
+    span {
+      margin-right: 5px;
+    }
+  }
+  &__post-time {
+    display: flex;
+    margin-left: 10px;
+    color: $text-color-light;
+    span {
+      margin-right: 5px;
+    }
+  }
+}

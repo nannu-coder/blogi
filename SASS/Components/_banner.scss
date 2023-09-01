@@ -16,24 +16,24 @@
         color: $text-color-main;
       }
     }
-    .post-date-time {
-      display: flex;
-      &__post-date {
-        display: flex;
-        color: $text-color-light;
-        span {
-          margin-right: 5px;
-        }
-      }
-      &__post-time {
-        display: flex;
-        margin-left: 10px;
-        color: $text-color-light;
-        span {
-          margin-right: 5px;
-        }
-      }
-    }
+    // .post-date-time {
+    //   display: flex;
+    //   &__post-date {
+    //     display: flex;
+    //     color: $text-color-light;
+    //     span {
+    //       margin-right: 5px;
+    //     }
+    //   }
+    //   &__post-time {
+    //     display: flex;
+    //     margin-left: 10px;
+    //     color: $text-color-light;
+    //     span {
+    //       margin-right: 5px;
+    //     }
+    //   }
+    // }
   }
 
   .banner-img {
