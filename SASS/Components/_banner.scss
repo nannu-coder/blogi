@@ -1,44 +1,47 @@
 @import "../varibales";
 
-.banner {
-  margin: 40px 0;
-  .banner-content {
-    // margin: 40px 0;
-    .banner-text {
-      .banner-head {
-        @include heading(2.5rem);
-      }
-      .hover-decoration {
-        @include heading-hover;
-      }
-      .post-description {
-        font-size: 1.125rem;
-        color: $text-color-main;
-      }
-    }
-    // .post-date-time {
-    // This style goes to core-compoetns.scss file
-    // }
-  }
-
-  .banner-img {
-    &__container {
-      background-color: $card-background-color;
-      padding: 1rem;
-      border-radius: 16px;
-      @include shadow-lg;
-      max-height: 450px;
-
-      .img-wrapper {
-        @include img-wrapper($img-dimention-9, $border-radius-8);
-        img {
-          @include img;
+#banner {
+  margin-bottom: 100px;
+  .banner {
+    margin: 40px 0;
+    .banner-content {
+      // margin: 40px 0;
+      .banner-text {
+        .banner-head {
+          @include heading(2.5rem);
+        }
+        .hover-decoration {
+          @include heading-hover;
+        }
+        .post-description {
+          font-size: 1.125rem;
+          color: $text-color-main;
         }
       }
+      // .post-date-time {
+      // This style goes to core-compoetns.scss file
+      // }
+    }
 
-      &:hover img {
-        cursor: pointer;
-        transform: scale(1.03);
+    .banner-img {
+      &__container {
+        background-color: $card-background-color;
+        padding: 1rem;
+        border-radius: 16px;
+        @include shadow-lg;
+        max-height: 450px;
+
+        .img-wrapper {
+          @include img-wrapper($img-dimention-9, $border-radius-8);
+          img {
+            @include img;
+          }
+
+          &:hover img {
+            cursor: pointer;
+            transform: scale(1.03);
+          }
+        }
       }
     }
   }

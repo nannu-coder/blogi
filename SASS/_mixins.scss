@@ -48,17 +48,17 @@
   -moz-box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
 }
 
+@mixin img-wrapper($ratio, $border-radius) {
+  aspect-ratio: $ratio;
+  display: block;
+  overflow: hidden;
+  border-radius: $border-radius;
+}
+
 @mixin img {
   max-height: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all linear 0.3s;
-}
-
-@mixin img-wrapper($ratio, $border-radius) {
-  aspect-ratio: $ratio;
-  display: block;
-  overflow: hidden;
-  border-radius: $border-radius;
 }
