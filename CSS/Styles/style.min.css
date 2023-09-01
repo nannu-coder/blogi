@@ -47,9 +47,9 @@ a {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 16px;
-  box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
-  -webkit-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
-  -moz-box-shadow: -1px 9px 5px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
+  -webkit-box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
+  -moz-box-shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
   max-height: 450px;
 }
 .banner .banner-img__container .img-wrapper {

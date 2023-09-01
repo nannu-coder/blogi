@@ -17,22 +17,7 @@
       }
     }
     // .post-date-time {
-    //   display: flex;
-    //   &__post-date {
-    //     display: flex;
-    //     color: $text-color-light;
-    //     span {
-    //       margin-right: 5px;
-    //     }
-    //   }
-    //   &__post-time {
-    //     display: flex;
-    //     margin-left: 10px;
-    //     color: $text-color-light;
-    //     span {
-    //       margin-right: 5px;
-    //     }
-    //   }
+    // This style goes to core-compoetns.scss file
     // }
   }
 
@@ -41,7 +26,7 @@
       background-color: $card-background-color;
       padding: 1rem;
       border-radius: 16px;
-      @include shadow;
+      @include shadow-lg;
       max-height: 450px;
 
       .img-wrapper {
