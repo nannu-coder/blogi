@@ -1,11 +1,16 @@
 .content {
   .content-wrapper {
-    background-color: $card-background-color;
-    padding: 2rem;
-    border-radius: $border-radius-16;
-    @include shadow-lg;
+    // background-color: $card-background-color;
+    // padding: 2rem;
+    // border-radius: $border-radius-16;
+    // @include shadow-lg;
     .post-card {
       display: flex;
+      background-color: $card-background-color;
+      padding: 2rem;
+      border-radius: $border-radius-16;
+      margin-bottom: 2rem;
+      @include shadow-lg;
       .post-img {
         &__container {
           width: 272px;
@@ -24,11 +29,54 @@
         }
       }
       .post-content {
-        .tag-icon {
-          .fa-circle {
-            @include tag-dot($nature-tag-color);
+        .nature {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($nature-tag-color);
+            }
           }
         }
+
+        .food {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($food-tag-color);
+            }
+          }
+        }
+
+        .style {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($style-tag-color);
+            }
+          }
+        }
+
+        .inspiration {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($inspiration-tag-color);
+            }
+          }
+        }
+
+        .technology {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($tech-tag-color);
+            }
+          }
+        }
+
+        .health {
+          .tag-icon {
+            .fa-circle {
+              @include tag-dot($health-tag-color);
+            }
+          }
+        }
+
         .content-head {
           @include heading(2rem);
         }
@@ -44,12 +92,19 @@
         }
       }
     }
+    .loadmore {
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
 
   .sidebar {
     background-color: $card-background-color;
     padding: $padding-lg;
     border-radius: $border-radius-16;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     @include shadow-lg;
     .sidebar-content {
       .sidebar-heading {
